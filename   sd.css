@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700;900&family=Poppins:wght@300;500;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* ส่วนของ Navigation */
+.nav-container {
+    margin-top: 10px;
+    border-bottom: 1px solid;
+    font-family: "Kanit", sans-serif;
+}
+
+nav h1 {
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    margin: 10px;
+    list-style: none;
+}
+
+nav ul a {
+    margin: 10px;
+    text-decoration: none;
+}
+
+.sign {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid;
+    padding: 10px;
+    margin-right: 10px;
+    background-color: rgba(27, 27, 27, 0.846);
+    border-radius: 10px;
+}
+
+/* ส่วนของภาพพื้นหลัง */
+.bg img {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    filter: brightness(70%);
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 50px;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.btn-text {
+    background: white;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 20px;
+    border: 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-text a {
+    text-decoration: none;
+    color: black;
+    border-left: 1px solid;
+    padding: 2px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    margin: 30px;
+}
+
+.text-expert {
+    flex: 1;
+    max-width: 50%;
+    font-size: 25px;
+    margin: auto;
+}
+
+.text-expert h1 {
+    font-weight: 900;
+}
+
+.img-trip {
+    flex: 1;
+    max-width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.img-trip img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* ส่วนของแพ็คเกจท่องเที่ยว */
+.trip-slider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.package-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    text-align: left;
+    margin: 0 20px;
+}
+
+.package-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.package-card h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+    line-height: 1.2;
+}
+
+.package-description {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.travel-now-btn {
+    display: block;
+    text-align: center;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.travel-now-btn:hover {
+    background-color: #0056b3;
+}
+
+/* สไตล์สำหรับ Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    font-family: "Kanit", sans-serif;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 20px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    border-top: 1px solid #444;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+    font-size: 12px;
+}
+
+/* ทำให้ Footer เป็น Responsive */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-section {
+        margin: 10px 0;
+    }
+}
+
+/* ปรับส่วนอื่นๆ ให้ Responsive */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .btn-text {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .flex-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .text-expert, .img-trip {
+        max-width: 100%;
+    }
+    .img-trip {
+        grid-template-columns: 1fr;
+    }
+    .package-card {
+        margin: 20px 0;
+    }
+}
+
+/* ปรับสำหรับหน้าจอขนาดเล็ก */
+@media (max-width: 480px) {
+    .text {
+        font-size: 32px;
+        padding: 0 10px;
+    }
+    .btn-text {
+        font-size: 16px;
+    }
+    .package-card {
+        padding: 10px;
+    }
+}

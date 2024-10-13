@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styles */
+.nav-container {
+    margin-top: 10px;
+    border-bottom: 1px solid #ddd;
+    font-family: "Kanit", sans-serif;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #333;
+    margin: 0;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a i {
+    margin-right: 5px;
+}
+
+nav ul li a:hover {
+    color: #0071c2;
+}
+
+.sign {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    background-color: #333;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.sign:hover {
+    background-color: #555;
+}
+
+/* Buttons */
+.btn {
+    background-color: #0071c2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #0071c2;
+    padding: 10px 20px;
+    border: 2px solid #0071c2;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn:hover, .btn-outline:hover {
+    opacity: 0.8;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.search-filter {
+    flex: 1;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.search-filter h3, .search-filter h4 {
+    margin-top: 0;
+}
+
+.search-filter label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.search-filter input[type="text"], .search-filter input[type="date"], .search-filter input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Filter Section */
+.filter-section {
+    margin-top: 20px;
+}
+
+.filter-section label {
+    display: block;
+    margin: 10px 0;
+}
+
+/* Results Section */
+.results {
+    flex: 2;
+    padding: 20px;
+}
+
+.results h3 {
+    margin-top: 0;
+}
+
+/* Restaurant Cards */
+.restaurant-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.restaurant-info {
+    flex: 2;
+    padding: 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+    filter: brightness(100%);
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+    background-blend-mode: overlay;
+}
+
+.restaurant-info h4, .restaurant-info p, .restaurant-info .tag {
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.restaurant-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: brightness(50%);
+    border-radius: 10px;
+    z-index: 0;
+}
+
+.restaurant-price {
+    flex: 1;
+    text-align: right;
+    z-index: 1;
+}
+
+.restaurant-price p {
+    margin: 5px 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #0071c2;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .search-section {
+        flex-direction: column;
+    }
+
+    .search-filter {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .restaurant-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .restaurant-price {
+        text-align: left;
+        margin-top: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
