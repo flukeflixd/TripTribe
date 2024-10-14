@@ -47,6 +47,8 @@ nav ul li .dropbtn {
     cursor: pointer;
 }
 
+
+
 /* ส่วนที่เกี่ยวกับเมนู dropdown */
 nav ul li .dropdown-content {
     display: none;
@@ -76,11 +78,12 @@ nav ul li.show .dropdown-content {
 .sign {
     text-decoration: none;
     color: #fff;
-    border: 1px solid;
+    border: 10px solid;
     padding: 10px;
     margin-right: 10px;
     background-color: rgba(27, 27, 27, 0.846);
     border-radius: 10px;
+
 }
 
 
