@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTribe - Restaurant Search</title>
+    <link rel="stylesheet" href="style/resnorth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <h1>TripTribe</h1>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="allhotel.html"><i class="fas fa-hotel"></i> Hotel</a></li>
+                        <li><a href="allres.html"><i class="fas fa-utensils"></i> Restaurant</a></li>
+                        <li><a href="alltour.html"><i class="fas fa-map"></i> Tours</a></li>
+                        <li><a href="review.html"><i class="fas fa-envelope"></i>Review</a></li>
+                    </ul>
+                    <a class="sign" href="#">Sign in</a>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-filter">
+                <h3>Your search</h3>
+                <form>
+                    <label for="location">Location</label>
+                    <input type="text" id="location" value="Bangkok, Thailand">
+
+                    <label for="cuisine">Cuisine</label>
+                    <input type="text" id="cuisine" value="Thai">
+
+                    <label for="date">Date</label>
+                    <input type="date" id="date">
+
+                    <label for="time">Time</label>
+                    <input type="time" id="time">
+
+                    <button class="btn">Search</button>
+                </form>
+
+                <div class="filter-section">
+                    <h4>Popular filters</h4>
+                    <label><input type="checkbox"> Outdoor seating</label>
+                    <label><input type="checkbox" checked> Vegetarian options</label>
+                    <label><input type="checkbox"> Family-friendly</label>
+                    <label><input type="checkbox"> Fine dining</label>
+                </div>
+            </div>
+            <div class="results">
+                <h3>All</h3>
+                <!-- Restaurant Cards from Multiple Regions -->
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r1.jpg');">
+                        <h4>เฮือนเพ็ญ (เชียงใหม่)</h4>
+                        <p>ร้านอาหารพื้นเมืองชื่อดังในเชียงใหม่ที่เปิดให้บริการมานากว่า 40 ปี...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#Vegetarian</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>เฮือนเพ็ญ (เชียงใหม่)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r4.jpg');">
+                        <h4>ร้านอาหารศรีฟ้าโภชนา (นครปฐม)</h4>
+                        <p>ร้านอาหารชื่อดังที่มีเมนูอาหารไทยภาคกลางแบบดั้งเดิม เช่น เป็ดย่าง, หมูแดง, และข้าวหมูกรอบ...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#Family-friendly</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>ศรีฟ้าโภชนา (นครปฐม)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r7.webp');">
+                        <h4>ร้านลาบเป็ด ป.4 (อุดรธานี)</h4>
+                        <p>ร้านอาหารอีสานชื่อดังในอุดรธานี ที่โดดเด่นด้วยเมนูลาบเป็ดรสเด็ด...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#Family-friendly</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>ลาบเป็ด ป.4 (อุดรธานี)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r10.jpg');">
+                        <h4>ร้านโกเบนซ์ (ภูเก็ต)</h4>
+                        <p>ร้านข้าวต้มชื่อดังในภูเก็ตที่ขึ้นชื่อเรื่องข้าวต้มแห้ง พร้อมกับเครื่องเคียงหลากหลาย...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#Family-friendly</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>โกเบนซ์ (ภูเก็ต)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r13.jpg');">
+                        <h4>ร้านปูเป็น (พัทยา)</h4>
+                        <p>ร้านอาหารทะเลที่ขึ้นชื่อในพัทยา โดดเด่นด้วยอาหารทะเลสดใหม่ เช่น ปูทะเลเผา...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#Seafood</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>ปูเป็น (พัทยา)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+                <div class="restaurant-card">
+                    <div class="restaurant-info" style="background-image: url('image/r16.jpg');">
+                        <h4>ร้านแพริมน้ำ (กาญจนบุรี)</h4>
+                        <p>ร้านอาหารที่ตั้งอยู่ริมน้ำแคว โดดเด่นด้วยเมนูปลาน้ำจืดสดใหม่ เช่น ปลาคังผัดฉ่า...</p>
+                        <span class="tag">#Top Pick</span>
+                        <span class="tag">#River View</span>
+                    </div>
+                    <div class="restaurant-price">
+                        <p>แพริมน้ำ (กาญจนบุรี)</p>
+                        <button class="btn-outline">View details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

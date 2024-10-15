@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTribe - Hotel Search</title>
+    <link rel="stylesheet" href="style/north.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <h1>TripTribe</h1>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="allhotel.html"><i class="fas fa-hotel"></i> Hotel</a></li>
+                        <li><a href="allres.html"><i class="fas fa-utensils"></i> Restaurant</a></li>
+                        <li><a href="alltour.html"><i class="fas fa-map"></i> Tours</a></li>
+                        <li><a href="review.html"><i class="fas fa-envelope"></i>Review</a></li>
+                    </ul>
+                    <a class="sign" href="#">Sign in</a>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-filter">
+                <h3>Your search</h3>
+                <form>
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" value="">
+
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in">
+
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out">
+
+                    <label for="guests">Guests</label>
+                    <input type="text" id="guests" value="">
+
+                    <button class="btn">Search</button>
+                </form>
+
+                <div class="filter-section">
+                    <h4>Popular filters</h4>
+                    <label><input type="checkbox"> Budget hotel</label>
+                    <label><input type="checkbox" checked> Breakfast included</label>
+                    <label><input type="checkbox"> Free airport shuttle</label>
+                    <label><input type="checkbox"> Hostel/Backpacker</label>
+                </div>
+            </div>
+            <div class="results">
+                <h3>All</h3>
+                <div class="hotel-card">
+                   
+<div class="hotel-info" style="background-image: url('image/564592_14011416220018068254.webp');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>เทวัญ จอมเทียน พัทยา</h4>
+                        <p>4.0 km from city centre</p>
+                        <p>Comfort room <br> 1x king size bed <br> 1x bathroom</p>
+                        <span class="tag">#Hot deal</span>
+                        <span class="tag">#Popular</span>
+                    </div>
+                    <div class="hotel-price">
+                        <p>เทวัญ จอมเทียน พัทยา</p>
+                        <p>฿ 586</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+                <div class="hotel-card">
+<div class="hotel-info" style="background-image: url('image/207931774.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>โรงแรมเดอะ แมนโกรฟ</h4>
+                        <p>9.4 km from city centre</p>
+                        <p>Standard room <br> 2x queen size bed <br> 1x bathroom</p>
+                        <span class="tag">#Hot deal</span>
+                    </div>
+                    <div class="hotel-price">
+                        <p>โรงแรมเดอะ แมนโกรฟ</p>
+                        <p>฿ 514</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <div class="hotel-info" style="background-image: url('image/a31abc2809261526997a627dc68066d2.webp');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>โกลเด้น ดราก้อน บีช รีสอร์ต พัทยา (บางละมุง) </h4>
+                        <p>8.5 km from city centre</p>
+                        <p>Premium room <br> 2x single beds <br> 1x bathroom</p>
+                        <span class="tag">#Hot deal</span>
+                        <span class="tag">#Popular</span>
+                    </div>
+                    <div class="hotel-price">
+                        <p>โกลเด้น ดราก้อน บีช รีสอร์ต พัทยา (บางละมุง)</p>
+                        <p>฿ 1,139</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

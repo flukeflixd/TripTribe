@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTribe - Hotel Search</title>
+    <link rel="stylesheet" href="style/north.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="nav-container">
+                <nav>
+                    <h1>TripTribe</h1>
+                    <ul>
+                        <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="allhotel.html"><i class="fas fa-hotel"></i> Hotel</a></li>
+                        <li><a href="allres.html"><i class="fas fa-utensils"></i> Restaurant</a></li>
+                        <li><a href="alltour.html"><i class="fas fa-map"></i> Tours</a></li>
+                        <li><a href="review.html"><i class="fas fa-envelope"></i>Review</a></li>
+                    </ul>
+                    <a class="sign" href="login.html">Sign in</a>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-filter">
+                <h3>Your search</h3>
+                <form>
+                    <label for="destination">Destination</label>
+                    <input type="text" id="destination" value="">
+
+                    <label for="check-in">Check-in</label>
+                    <input type="date" id="check-in">
+
+                    <label for="check-out">Check-out</label>
+                    <input type="date" id="check-out">
+
+                    <label for="guests">Guests</label>
+                    <input type="text" id="guests" value="">
+
+                    <button class="btn">Search</button>
+                </form>
+
+                <div class="filter-section">
+                    <h4>Popular filters</h4>
+                    <label><input type="checkbox"> Local-Style Accommodation</label>
+                    <label><input type="checkbox" checked>Traditional Breakfast Included</label>
+                    <label><input type="checkbox"> Local Tour Guide Service</label>
+                    <label><input type="checkbox"> Cultural Stay</label>
+                </div>
+            </div>
+            <div class="results">
+                <h3>All</h3>
+                <div class="hotel-card">
+                   
+<div class="hotel-info" style="background-image: url('image/t7.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>ทัวร์ช้อปปิ้งในกรุงเทพฯ - ห้างหรูและตลาดนัด
+                        </h4>
+                        <p>
+                            สัมผัสการช้อปปิ้งที่ครอบคลุมทั้งห้างสรรพสินค้าหรู เช่น สยามพารากอน และ เซ็นทรัลเวิลด์ รวมถึงตลาดนัดที่มีชื่อเสียงอย่าง ตลาดนัดจตุจักร คุณสามารถเลือกซื้อสินค้าตั้งแต่แบรนด์ดังไปจนถึงของทำมือที่ไม่เหมือนใครได้ในเมืองหลวงแห่งนี้
+                        <p> 
+                        </p>
+                        <span class="tag">#Hot deal</span>
+                        <span class="tag">#Popular</span>
+                    </div>
+                    <div class="hotel-price">
+                        <p>ทัวร์ช้อปปิ้งในกรุงเทพฯ - ห้างหรูและตลาดนัด
+                        </p>
+                        <p>฿ 5000</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+                <div class="hotel-card">
+<div class="hotel-info" style="background-image: url('image/t8.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>ทัวร์ช้อปปิ้งงานฝีมือและหัตถกรรมในเชียงใหม่
+                        </h4>
+                        <p>
+                            สำหรับผู้ที่สนใจงานฝีมือท้องถิ่น ทัวร์นี้จะพาคุณไปยังตลาดชื่อดังอย่าง ตลาดวโรรส และ หมู่บ้านหัตถกรรมสันกำแพง ที่นี่คุณจะได้เลือกซื้อสินค้าทำมืออย่างผ้าไหม เครื่องปั้นดินเผา และเครื่องเงิน รวมถึงได้เยี่ยมชมเวิร์กช็อปที่แสดงการทำงานของช่างฝีมือท้องถิ่น
+                        </p>
+                        <span class="tag">#Hot deal</span>
+                    </div>
+                    <div class="hotel-price">
+                        <p>ทัวร์ช้อปปิ้งงานฝีมือและหัตถกรรมในเชียงใหม่                        </p>
+                        <p>฿ 5000</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+                <div class="hotel-card">
+                    <div class="hotel-info" style="background-image: url('image/t9.jpg');background-size: cover;background-position: center;background-repeat: no-repeat;object-fit: cover;filter: brightness(100%);width: 100%;height: 100%;overflow: hidden;">
+                        <h4>ทัวร์ช้อปปิ้งย่านเมืองเก่าภูเก็ตและตลาดกลางคืน
+                        </h4>
+                        <p>สัมผัสเสน่ห์ของ ย่านเมืองเก่าภูเก็ต ที่โดดเด่นด้วยสถาปัตยกรรมชิโน-โปรตุกีส และร้านค้าที่มีเอกลักษณ์ ทัวร์นี้ยังรวมถึงการเยี่ยมชม ถนนคนเดินวันอาทิตย์ ที่คุณสามารถหาของที่ระลึกทำมือ อาหารพื้นเมือง และสินค้าแฟชั่นในราคาย่อมเยา ทัวร์นี้ผสมผสานประวัติศาสตร์และการช้อปปิ้งในบรรยากาศที่สบายๆ
+                    </div>
+                    <div class="hotel-price">
+                        <p>ทัวร์ช้อปปิ้งย่านเมืองเก่าภูเก็ตและตลาดกลางคืน
+                        </p>
+                        <p>฿ 5000</p>
+                        <button class="btn-outline">See booking options</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
